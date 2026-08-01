@@ -1,7 +1,23 @@
 aid: rebookify
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rebookify.png
 name: Rebookify
-description: Rebookify is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Rebookify is a travel-technology company that helps travel agencies and travel
+  management companies save money on hotel bookings by continuously monitoring the price of existing
+  hotel reservations and automatically rebooking them at lower rates whenever prices drop, capturing
+  the savings without changing the guest's stay. Backed by 500 Global, Rebookify operates a
+  business-facing web product at rebookify.com. As of this enrichment pass no public developer API,
+  documentation, developer portal, SDKs, or /.well-known discovery surface has been identified.
 url: https://raw.githubusercontent.com/api-evangelist/rebookify/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +27,28 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Travel
+- Hospitality
+- Hotels
+- Booking
+- Price Monitoring
+- Travel Technology
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/rebookify-domain-security.yml
 - type: Website
   url: https://rebookify.com
